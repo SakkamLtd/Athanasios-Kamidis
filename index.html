@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Athanasios Kamidis</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #1f2933;
+  }
+
+  header {
+     background-image: linear-gradient(rgba(15,23,42,0.65),
+                                      rgba(15,23,42,0.65)),
+                      url("AERIAL SHOT.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+  }
+ 
+  section {
+    padding: 50px 10%;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #0f172a;
+  }
+
+  .box {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #0f172a;
+    color: white;
+  }
+  .project {
+    border-left: 4px solid #f59e0b;
+    padding-left: 18px;
+    margin-bottom: 30px;
+  }
+  .filter-buttons {
+   margin-bottom: 25px;
+  }
+
+  .filter-buttons button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #1e3a5f;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .filter-buttons button:hover {
+    background: #f59e0b;
+    color: #111827;
+  }
+  .project {
+    display: none;
+    border-left: 4px solid #f59e0b;
+    padding-left: 18px;
+    margin-bottom: 30px;
+  }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="profile.jpg" class="profile-photo" alt="Profile photo">
+  <h1>Athanasios Kamidis</h1>
+  <p>
+<h3> 20+ Projects | GTCC & Energy Projects | Operation | Commissioning | Start Up | Performance & RTR | Hand Over.  </h3>
+Strategical Thinking, Practical Approach & Focus on target.
+</p>
+</header>
+
+<section>
+  <div class="box">
+    <h2>About Me</h2>
+    <p>
+Recognized for persistence, calmness under pressure and a practical approach in demanding industrial environments.
+Strong analytical mindset with attention to accuracy in both technical evaluation and communication, combined with the ability to identify critical issues and maintain clear focus during complex commissioning and start-up activities.
+Able to remain composed under challenging conditions while maintaining effective cooperation with teams, contractors and clients for safe and reliable project execution.
+
+</p>
+  </div>
+
+  <div class="box">
+    <h2>Experience</h2>
+    <p>
+Commissioning Manager / Senior Commissioning Engineer with international experience in power generation and industrial energy projects (GTCC, WtE, CHP, WHB).
+Proven track record in leading multi-disciplinary commissioning teams, coordinating EPC contractors, managing complex start-up and handover activities under demanding site conditions.
+Strong expertise in planning and execution of commissioning phases, including pre-commissioning, system integration, performance testing and reliability run.
+Hands-on experience of power plant packages including GT, ST, HRSG, DCS and BOP systems. Familiar with ABB, GE, METSO, Honeywell and Siemens DCS platforms, participating in tuning and optimization of plant systems.
+</p>
+  </div>
+
+<div class="box">
+  <h2>Project Experience</h2>
+  <p id="instruction">Select a category to view projects</p>
+
+  <h3>View by Position</h3>
+  <div class="filter-buttons">
+    <button onclick="filterProjects('commissioning-engineer')">Commissioning Engineer</button>
+    <button onclick="filterProjects('scheduler-ho-eng.')">Scheduler & HO Eng.</button>
+	<button onclick="filterProjects('operator')">Operator</button>
+    <button onclick="filterProjects('commissioning-manager')">Commissioning Manager</button>
+  </div>
+
+  <h3>View by Project Type</h3>
+  <div class="filter-buttons">
+    <button onclick="filterProjects('gtcc')">GTCC</button>
+	<button onclick="filterProjects('gtoc')">GTOC</button>
+    <button onclick="filterProjects('wte-whb')">WtE & WHB</button>
+    <button onclick="filterProjects('water-industry')">Water Industry</button>
+    <button onclick="filterProjects('chp')">CHP</button>
+	<button onclick="filterProjects('hfo-pp')">HFO PP</button>
+  </div>
+ 
+
+  <div class="project commissioning-engineer water-industry ">
+  <h3>Dresden – Infineon CUB/FAB Microprocessor Project | Germany</h3>
+  <p><strong>Period:</strong> 09.2025 – 01.2026</p>
+  <p><strong>Company:</strong> BW Water</p>
+  <p><strong>Position:</strong> Lead Commissioning / System Completion & Handover Engineer</p>
+  <p><strong>Project Type:</strong> WHB / Industrial Energy / Water Treatment Systems</p>
+  <p>Lead commissioning, system completion and handover activities for CUB/FAB water treatment systems, including turnover process, walkdowns, documentation review, pre-commissioning follow-up, pressure testing, flushing and commissioning activities.</p>
+</div>
+
+<div class="project commissioning-engineer scheduler-ho-eng. chp wte">
+  <h3>Vilnius CHP WtE & BIO Plant | Lithuania | 240 MW</h3>
+  <p><strong>Period:</strong> 08.2020 – 01.2021</p>
+  <p><strong>Company:</strong> TEC LT</p>
+  <p><strong>Position:</strong> Lead System Commissioning & Handover Engineer</p>
+  <p><strong>Project Type:</strong> CHP / WtE</p>
+  <p>Lead commissioning, system completion and handover activities for BOP systems. Involved in start-up and operational support of WtE boiler systems, including walkdowns, flushing, blowing and commissioning follow-up.</p>
+</div>
+
+<div class="project scheduler-ho-eng. gtcc">
+  <h3>Okpai II GTCC Power Plant | Nigeria | 450 MW</h3>
+  <p><strong>Period:</strong> 09.2018 – 07.2019</p>
+  <p><strong>Company:</strong> SAIPEM</p>
+  <p><strong>Position:</strong> Commissioning Scheduler & Handover Engineer</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Scheduling and monitoring of installation, pre-commissioning and commissioning activities in Primavera P6, including handover documentation packages, walkdowns, punch list management and commissioning progress coordination.</p>
+</div>
+
+<div class="project commissioning-engineer gtcc">
+  <h3>Beni Suef GTCC Power Plant | Egypt | 4800 MW</h3>
+  <p><strong>Period:</strong> 12.2017 – 03.2018</p>
+  <p><strong>Company:</strong> SIEMENS</p>
+  <p><strong>Position:</strong> Lead Commissioning Engineer</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Lead commissioning activities for NEM HRSG systems, including chemical cleaning, flushing, steam blowing, commissioning, start-up and performance testing.</p>
+</div>
+
+<div class="project commissioning-engineer wte">
+  <h3>Dublin Waste-to-Energy CHP Plant | Ireland | 62 MW</h3>
+  <p><strong>Period:</strong> 09.2016 – 07.2017</p>
+  <p><strong>Company:</strong> Hitachi Zosen Inova</p>
+  <p><strong>Position:</strong> Lead BOP System Commissioning & Completion Engineer</p>
+  <p><strong>Project Type:</strong> WtE / CHP</p>
+  <p>Lead commissioning and system completion activities for BOP systems, including flushing, tuning, start-up and operational support. Participation in handover process, walkdowns and punch list close-out.</p>
+</div>
+
+<div class="project commissioning-engineer hfo-pp">
+  <h3>Yanbu II Power & Water Project | KSA | 640 MW + 60,000 m³/day DW</h3>
+  <p><strong>Period:</strong> 09.2014 – 09.2015</p>
+  <p><strong>Position:</strong> Independent Commissioning Consultant</p>
+  <p><strong>Project Type:</strong> HFO PP / Power & Water</p>
+  <p>Commissioning consultancy for heavy oil boilers, including chemical cleaning, flushing and steam blowing, as well as boiler handover process activities, walkdowns, punch list initiation and punch list close-out.</p>
+</div>
+
+<div class="project scheduler-ho-eng. gtcc">
+  <h3>Deir Ali II GTCC Power Plant | Syria | 710 MW</h3>
+  <p><strong>Period:</strong> 10.2011 – 03.2012</p>
+  <p><strong>Company:</strong> METKA</p>
+  <p><strong>Position:</strong> Commissioning Scheduler & Handover Eng.</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Coordination and scheduling in Primavera P6 and MS Project of pre-commissioning, commissioning and handover package activities for GTCC systems.</p>
+</div>
+
+<div class="project Commissioning-engineer scheduler-ho-eng. gtcc">
+  <h3>Brazi GTCC Power Plant | Romania | 860 MW</h3>
+  <p><strong>Period:</strong> 08.2010 – 03.2011</p>
+  <p><strong>Company:</strong> METKA</p>
+  <p><strong>Position:</strong> Commissioning Manager: Scheduling / System Completion /</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Scheduling and support of commissioning activities including HRSG chemical cleaning, flushing and air blowing, as well as BOP system completion and handover process coordination.</p>
+</div>
+
+<div class="project commissioning-engineer scheduler-ho-eng. gtcc">
+  <h3>Karachi GTCC Power Plant | Pakistan | 220 MW</h3>
+  <p><strong>Period:</strong> 11.2007 – 10.2009</p>
+  <p><strong>Company:</strong> METKA</p>
+  <p><strong>Position:</strong> Lead Commissioning Engineer</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Lead commissioning activities including system commissioning, system completion, handover coordination and documentation for GTCC systems. Participation in start-up, performance testing and Reliability Run Test.</p>
+</div>
+
+<div class="project commissioning-engineer chp">
+  <h3>Agios Nikolaos CHP Plant | Greece | 400 MW</h3>
+  <p><strong>Period:</strong> 03.2007 – 10.2007</p>
+  <p><strong>Company:</strong> METKA</p>
+  <p><strong>Position:</strong> I&C Commissioning Engineer</p>
+  <p><strong>Project Type:</strong> CHP</p>
+  <p>Instrumentation and Control commissioning for CHP power plant BOP and HRSG instrumentation and DCS-related commissioning activities.</p>
+</div>
+
+<div class="project commissioning-engineer gtoc">
+  <h3>FlexGen Poolbeg Open Cycle Power Plant | Ireland | 65 MW</h3>
+  <p><strong>Period:</strong> 08.2023 – 04.2024</p>
+  <p><strong>Company:</strong> ESBI</p>
+  <p><strong>Position:</strong> Mechanical Commissioning Engineer</p>
+  <p><strong>Project Type:</strong> GTOC</p>
+  <p>Mechanical commissioning activities including pre-commissioning follow-up, turnover package review, performance test and Reliability Run Test support for Siemens open cycle power plant systems.</p>
+</div>
+
+<div class="project scheduler-ho-eng. gtcc">
+  <h3>Khulna Dual Fuel CCPP | Bangladesh | 360 MW</h3>
+  <p><strong>Period:</strong> 02.2023 – 06.2023</p>
+  <p><strong>Company:</strong> ILF Consulting Engineers</p>
+  <p><strong>Position:</strong> Senior Commissioning Engineer</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Senior commissioning engineering support for GTCC handover process, contractual performance testing, Reliability Run Test and coordination between EPC contractor and client.</p>
+</div>
+
+<div class="project commissioning-manager whb">
+  <h3>Imerys Energy Recovery Plant | Belgium | 25 MW</h3>
+  <p><strong>Period:</strong> 09.2024 – 04.2025</p>
+  <p><strong>Position:</strong> Commissioning Manager</p>
+  <p><strong>Project Type:</strong> WHB / Energy Recovery</p>
+  <p>Coordination of contractors and commissioning preparation activities for energy recovery power plant, including scheduling follow-up, procedure review and vendors-contractors management.</p>
+</div>
+
+<div class="project commissioning-manager gtoc">
+  <h3>Aweer GT Simple Cycle Power Plant | UAE | 800 MW</h3>
+  <p><strong>Period:</strong> 12.2021 – 04.2022</p>
+  <p><strong>Position:</strong> Commissioning Manager</p>
+  <p><strong>Project Type:</strong> GTOC</p>
+  <p>Coordination of commissioning schedules, resource planning and commissioning interfaces during open cycle power plant execution.</p>
+</div>
+
+<div class="project commissioning-manager gtcc">
+  <h3>Al Amara & Maisan GTCC Projects | Iraq / Kurdistan | 800 & 750 MW</h3>
+  <p><strong>Period:</strong> 05.2021 – 09.2021</p>
+  <p><strong>Position:</strong> Commissioning Manager</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Management and monitoring of commissioning activities, review of commissioning procedures and schedule coordination with EPC contractor.</p>
+</div>
+
+<div class="project commissioning-manager gtcc">
+  <h3>Waad Al Shamal ISGTCC Power Plant | KSA | 1300 MW</h3>
+  <p><strong>Period:</strong> 05.2018 – 09.2018</p>
+  <p><strong>Position:</strong> Deputy Commissioning Manager</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Coordination and follow-up of commissioning activities, TA mobilization scheduling and synchronization of commissioning interfaces between project teams and client.</p>
+</div>
+
+<div class="project commissioning-manager hfo-pp">
+  <h3>Khabat Thermal Power Plant | Iraq / Kurdistan | 300 MW</h3>
+  <p><strong>Period:</strong> 10.2015 – 07.2016</p>
+  <p><strong>Position:</strong> Commissioning Manager / Owner’s Engineer</p>
+  <p><strong>Project Type:</strong> HFO PP / Thermal Power Plant</p>
+  <p>Owner’s Engineer support for commissioning activities, schedule follow-up, procedure review and coordination with EPC contractor during commissioning execution.</p>
+</div>
+
+<div class="project commissioning-manager water-industry">
+  <h3>Yanbu II Marine Facilities & Sea Water Cooling | KSA</h3>
+  <p><strong>Period:</strong> 12.2012 – 08.2014</p>
+  <p><strong>Position:</strong> Commissioning Manager</p>
+  <p><strong>Project Type:</strong> HFO PP / Marine Facilities / Sea Water Cooling</p>
+  <p>Commissioning management activities for marine facilities and seawater cooling systems supporting thermal power and industrial utility infrastructure.</p>
+</div>
+
+<div class="project operator gtcc">
+  <h3>Thessaloniki GTCC Power Plant | Greece | 400 MW</h3>
+  <p><strong>Period:</strong> 08.2005 – 01.2007</p>
+  <p><strong>Position:</strong> Shift Team Leader – Commercial Operation</p>
+  <p><strong>Project Type:</strong> GTCC</p>
+  <p>Operation, start-up and shutdown activities, DCS-based optimization of combined cycle systems and coordination between operation and maintenance teams, including PTW and LOTO activities.</p>
+</div>
+
+<div class="project operator gtoc">
+  <h3>Lavrio Gas Turbine Power Plant | Greece | 100 MW</h3>
+  <p><strong>Period:</strong> 05.2004 – 09.2004 & 05.2005 – 07.2005</p>
+  <p><strong>Position:</strong> Operator</p>
+  <p><strong>Project Type:</strong> GTOC</p>
+  <p>Installation support and operation of LM2500 gas turbine units.</p>
+</div>
+</div>
+
+  <div class="box">
+    <h2>Contact</h2>
+    <p>Email: sakkam@outlook.com</p>
+<p>Available WORLDWIDE for commissioning and start-up projects.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Athanasios Kamidis | Commissioning & Start-Up Engineer
+</footer>
+
+<script>
+  function filterProjects(category) {
+    let projects = document.querySelectorAll('.project');
+    let instruction = document.getElementById('instruction');
+
+    if (instruction) {
+        instruction.style.display = 'none';
+    }
+
+    projects.forEach(function(project) {
+
+        if (category === 'wte-whb') {
+
+            if (
+                project.classList.contains('wte') ||
+                project.classList.contains('whb')
+            ) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+
+        } else {
+
+            if (project.classList.contains(category)) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+
+        }
+
+    });
+  }
+</script>
+</body>
+</html>
